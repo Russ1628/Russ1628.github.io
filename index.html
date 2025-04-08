@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TraderRuss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #0b0c10; color: #ffffff; }
+
+    .top-search {
+      background-color: #1f1f1f;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .top-search input {
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      background-color: #2e2e2e;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #e63946;
+      border-radius: 4px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1f1f1f;
+      list-style: none;
+      min-width: 200px;
+      border: 1px solid #333;
+      z-index: 1000;
+    }
+
+    .submenu li a {
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    main {
+      padding: 80px 20px;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #888;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-search">
+    <input type="text" placeholder="Search the site..." />
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Ali ▼</a>
+        <ul class="submenu">
+          <li><a href="#">01 交易员的发展</a></li>
+          <li><a href="#">02 表现</a></li>
+          <li><a href="#">03 市场原则</a></li>
+          <li><a href="#">04 价格行为原则</a></li>
+          <li><a href="#">05 交易心理</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Brad ▼</a>
+        <ul class="submenu">
+          <li><a href="#">01 导航课</a></li>
+          <li><a href="#">02 E-mini复盘</a></li>
+          <li><a href="#">03 如何使用百科全书</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Rose ▼</a>
+        <ul class="submenu">
+          <li><a href="#">01 Discord分享</a></li>
+          <li><a href="#">02 2025</a></li>
+          <li><a href="#">03 2024</a></li>
+          <li><a href="#">04 2023</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Tim fairweather</a></li>
+      <li>
+        <a href="#">方方土 ▼</a>
+        <ul class="submenu">
+          <li><a href="#">01 专题课</a></li>
+          <li><a href="#">02 边做边讲</a></li>
+          <li><a href="#">03 E-mini复盘</a></li>
+          <li><a href="#">04 交易心理</a></li>
+          <li><a href="#">05 直播合辑</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to TraderRuss</h1>
+    <p>Price action insights and trading discipline resources.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 TraderRuss. All rights reserved.
+  </footer>
+
+</body>
+</html>
